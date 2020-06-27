@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://bkkim:1kimbyung@catchstar-byn9b.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://bkkim:@catchstar-byn9b.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(() =>  console.log('MongoDb connected'))
 .catch(err => console.log(err))
